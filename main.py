@@ -63,7 +63,7 @@ def handle_citywest(message):
 
 
 # --- 5. ОБРАБОТЧИК ГИННЕСС ---
-@bot.message_handler(func=lambda message: any(keyword in message.text.lower() for keyword in ['гиннесс', 'пиво', 'guinness', 'гінес', 'гіннес', 'гинес', 'гіннес', 'гиннес']))
+@bot.message_handler(func=lambda message: any(keyword in message.text.lower() for keyword in ['гиннесс', 'пиво', 'guinness', 'гінес', 'гіннес', 'пиву', 'гинес', 'гіннес', 'гиннес']))
 def handle_guinness(message):
     guinness_text = "Гиннесс (Guinness) — легендарный ирландский стаут. Главная пивоварня находится в Дублине, на Сент-Джеймс Гейт. Его часто называют 'жидким хлебом Ирландии'! Cheers 🇮🇪"
     bot.send_message(message.chat.id, guinness_text)
