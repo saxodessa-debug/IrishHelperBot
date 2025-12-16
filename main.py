@@ -78,4 +78,5 @@ def handle_dublin(message):
 
 # --- 7. ЗАПУСК БОТА ---
 # Обработчики /visa и эхо (default_response) удалены.
-bot.polling()
+print("Bot is running...")
+bot.infinity_polling()
